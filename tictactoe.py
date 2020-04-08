@@ -171,7 +171,7 @@ def player_phase(current_board, mark, first_go, second_go):
         else:
             print("Победили нолики - Игрок № "+str(second_go))
 
-    if(full_board):
+    if(full_board and not mark_won):
         print("Ничья")
 
     game_on = not mark_won and not full_board
