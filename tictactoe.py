@@ -1,7 +1,8 @@
 import os
 import random
 
-def clear(): return os.system('cls')  # on Windows System
+def clear(): 
+    return os.system('cls')  # on Windows System
 
 board_numbered = ["3", "2", "1",
                   "6", "5", "4",
@@ -108,8 +109,7 @@ def choose_first():
     elif (random_result == 1):
         return 'X'
 
-
-def space_check(board, position):    
+def space_check(board, position):
     return board[position] != 'X' and board[position] != 'O'
 
 
@@ -202,11 +202,10 @@ if __name__ == "__main__":
             game_on, current_board = player_phase(
                 current_board, 'X', first_go, second_go)
 
-            if(game_on):         
+            if game_on:
                 print("Ход Игрока №"+str(second_go))
-                game_on, current_board=player_phase(
-                    current_board,'O',first_go,second_go)
+                game_on, current_board = player_phase(
+                    current_board, 'O', first_go, second_go)
 
-        if(not replay()):
-            break           
-  
+        if not replay():
+            break
