@@ -1,6 +1,9 @@
 {
     "python.terminal.activateEnvironment": true,
     "python.pythonPath": "D:\\Python\\python.exe",
+    "python.linting.pylintPath":"D:\\Python\\Scripts\\pylint.exe",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.ignorePatterns": [".vscode/*.py", "**/site-packages/**/*.py"]    
 }

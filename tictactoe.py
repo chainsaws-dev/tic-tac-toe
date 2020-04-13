@@ -1,9 +1,7 @@
 import os
 import random
 
-
 def clear(): return os.system('cls')  # on Windows System
-
 
 board_numbered = ["3", "2", "1",
                   "6", "5", "4",
@@ -12,7 +10,6 @@ board_numbered = ["3", "2", "1",
 board_clean = ["", "", "",
                "", "", "",
                "", "", ""]
-
 
 def display_board(board):
     board = map_cells_board(board)
